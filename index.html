@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Astra Company | Soluções que fazem você brilhar</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;700;900&family=Nunito:wght@300;400;600;700;800&display=swap"
+    rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- Navbar -->
+  <nav id="navbar">
+    <a href="#hero" class="nav-logo" aria-label="Astra Company - Página Inicial">
+      <img src="IMG/logo-astra.png" alt="Astra Company" width="256" height="132">
+    </a>
+    <ul class="nav-links" id="navLinks" role="navigation" aria-label="Menu principal">
+      <li><a href="#hero">Início</a></li>
+      <li><a href="#about">Sobre</a></li>
+      <li><a href="#project">Projeto</a></li>
+      <li><a href="#accessibility">Acessibilidade</a></li>
+      <li><a href="#team">Equipe</a></li>
+      <li><a href="#contact">Contato</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger" aria-label="Abrir menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- Hero -->
+  <section id="hero" aria-label="Página inicial">
+    <canvas id="starCanvas" aria-hidden="true"></canvas>
+
+    <!-- Floating sparkles decorativas -->
+    <div class="sparkle-deco" aria-hidden="true">✦</div>
+    <div class="sparkle-deco" aria-hidden="true">★</div>
+    <div class="sparkle-deco" aria-hidden="true">✦</div>
+    <div class="sparkle-deco" aria-hidden="true">✧</div>
+
+    <div class="hero-inner">
+      <p class="hero-badge" role="text">Inovação · Acessibilidade · Inclusão</p>
+      <h1 class="hero-title">
+        Soluções que fazem <br>você <span class="grad">brilhar</span>
+      </h1>
+      <p class="hero-desc">
+        A Astra Company desenvolve tecnologias inovadoras voltadas para educação e inclusão digital — tornando o
+        aprendizado acessível, significativo e empolgante para todos.
+      </p>
+      <div class="hero-btns">
+        <a href="#project" class="btn btn-primary">✦ Conheça nossos projetos</a>
+        <a href="#about" class="btn btn-outline">Saiba mais →</a>
+      </div>
+    </div>
+    <a href="#about" class="hero-scroll" aria-label="Rolar para a próxima seção">
+      <span></span><span></span>
+    </a>
+  </section>
+
+  <!-- Sobre  -->
+  <section id="about" aria-label="Sobre a Astra Company">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-text reveal-left">
+          <p class="section-tag">Quem somos</p>
+          <h2 class="section-title">Tecnologia com<br>propósito real</h2>
+          <p>A Astra Company nasceu com uma missão clara: criar soluções tecnológicas que não apenas inovam, mas
+            transformam vidas. Acreditamos que a tecnologia deve ser acessível a todos — sem exceção.</p>
+          <p>Focados em educação inclusiva e acessibilidade digital, desenvolvemos sistemas que colocam as pessoas no
+            centro. Nossa equipe multidisciplinar une design, pedagogia e desenvolivimento de sistemas para criar
+            experiências que
+            realmente fazem a diferença.</p>
+          <p style="margin-bottom:2rem">Somos uma empresa que acredita que incluir não é opcional — é o ponto de partida
+            de tudo que fazemos.</p>
+          <a href="#project" class="btn btn-outline">Ver nosso projeto principal →</a>
+        </div>
+        <div class="mvv-stack">
+          <div class="mvv-card reveal d1">
+            <h4>Missão</h4>
+            <p>Desenvolver soluções tecnológicas acessíveis que democratizem a educação e promovam a inclusão digital
+              para crianças surdas e ouvintes, garantindo que nenhuma criança fique para trás.</p>
+          </div>
+          <div class="mvv-card reveal d2">
+            <h4>Visão</h4>
+            <p>Ser referência nacional em tecnologia educacional inclusiva, criando um futuro onde todas as crianças —
+              independentemente de suas necessidades — tenham acesso ao aprendizado de qualidade.</p>
+          </div>
+          <div class="mvv-card reveal d3">
+            <h4>Valores</h4>
+            <p>Inovação constante, acessibilidade universal, inclusão genuína, colaboração aberta, ética inegociável e
+              compromisso com impacto social positivo em cada decisão que tomamos.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projeto -->
+  <section id="project" aria-label="Nosso projeto de LIBRAS">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="section-tag">Nossa plataforma</p>
+        <h2 class="section-title">Plataforma Gamificada de LIBRAS</h2>
+        <p class="section-desc">Um sistema inovador que transforma o ensino da Língua Brasileira de Sinais em uma
+          experiência interativa, divertida e verdadeiramente inclusiva.</p>
+      </div>
+
+      <div class="project-hero-card reveal">
+        <h3>Signa Ludus</h3>
+        <p>A plataforma Signa foi desenvolvida para apoiar professores no ensino inclusivo de LIBRAS, criando pontes
+          entre professores e crianças surdas e ouvintes através de gamificação inteligente, inteligência artificial e
+          atividades interativas que tornam o aprendizado mais fácil e memorável.</p>
+      </div>
+
+      <div class="features-grid">
+        <div class="feature-card reveal d1">
+          <h4>Gamificação Total</h4>
+          <p>Sistema completo de missões e conquistas que mantém usuários engajados e motivados
+            durante toda a jornada de aprendizado em LIBRAS.</p>
+        </div>
+        <div class="feature-card reveal d2">
+          <h4>Desafios Interativos</h4>
+          <p>Desafios diários, semanais e temáticos que incentivam a prática constante de LIBRAS de forma lúdica,
+            progressiva e cada vez mais envolvente.</p>
+        </div>
+        <div class="feature-card reveal d1">
+          <h4>Agente Virtual Inteligente</h4>
+          <p>Assistente de IA que acompanha o desenvoltura do professor, oferecendo dicas personalizadas e adaptando o
+            conteúdo ao ritmo e estilo de ensino de cada um para auxiliar na aplicação de aulas mais eficazes.</p>
+        </div>
+        <div class="feature-card reveal d3">
+          <h4>Atividades em LIBRAS</h4>
+          <p>Biblioteca rica de atividades interativas com vídeos em LIBRAS, exercícios de reconhecimento e
+            práticas desenvolvidas com especialistas certificados.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Acessibilidade -->
+  <section id="accessibility" aria-label="Acessibilidade e inclusão">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="section-tag">Inclusão digital</p>
+        <h2 class="section-title">Tecnologia para Todos</h2>
+        <p class="section-desc">A educação de qualidade é um direito de todas as crianças. Nossa plataforma foi
+          projetada do zero para ser verdadeiramente inclusiva em cada detalhe.</p>
+      </div>
+      <div class="access-grid">
+        <div class="access-card reveal d1">
+          <span class="acc-icon" aria-hidden="true"></span>
+          <h4>Inclusão Total</h4>
+          <p>Ambiente compartilhado onde professores aprendem de forma lúdica, desenvolvendo empatia e melhorando a
+            forma de aplicarem o conteúdo com clareza e efiência à seus alunos</p>
+        </div>
+        <div class="access-card reveal d2">
+          <span class="acc-icon" aria-hidden="true"></span>
+          <h4>Acessibilidade Digital</h4>
+          <p>Interface seguindo diretrizes WCAG 2.1, com suporte a tecnologias assistivas, alto contraste, navegação por
+            teclado e legendas em vídeos.</p>
+        </div>
+        <div class="access-card reveal d3">
+          <span class="acc-icon" aria-hidden="true"></span>
+          <h4>Educação Inclusiva</h4>
+          <p>Conteúdo pedagógico desenvolvido com especialistas em educação especial para garantir aprendizado
+            significativo e respeitoso para todos.</p>
+        </div>
+        <div class="access-card reveal d4">
+          <span class="acc-icon" aria-hidden="true"></span>
+          <h4>Interface Intuitiva</h4>
+          <p>Design centrado no usuário com elementos visuais claros, ícones representativos e navegação que dispensa
+            conhecimento técnico prévio.</p>
+        </div>
+        <div class="access-card reveal d5">
+          <span class="acc-icon" aria-hidden="true"></span>
+          <h4>Aprendizado Adaptativo</h4>
+          <p>Metodologia que ajuda o professor a entender o ritmo de cada criança e auxiliar no ensino, oferecendo
+            múltiplos caminhos e formatos para alcançar o
+            mesmo objetivo de aprendizado.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Grupinho da bagunça -->
+  <section id="team" aria-label="Nossa equipe">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="section-tag">Nosso time</p>
+        <h2 class="section-title">A equipe por Trás da Astra</h2>
+        <p class="section-desc">Uma equipe apaixonada por tecnologia, educação e impacto social — unida pelo propósito
+          de tornar o aprendizado acessível para todos.</p>
+      </div>
+      <div class="team-grid">
+
+        <div class="team-card reveal d1">
+          <div class="avatar">
+            <img src="IMG/BobaoMaster.jpeg" alt="">
+          </div>
+          <h4>Felipe Novais</h4>
+          <p class="team-role">Dev Database</p>
+          <div class="socials">
+            <a href="#" aria-label="LinkedIn">In</a>
+            <a href="#" aria-label="GitHub">gH</a>
+            <a href="#" aria-label="Twitter / X">✕</a>
+          </div>
+        </div>
+
+        <div class="team-card reveal d2">
+          <div class="avatar" style="background:linear-gradient(135deg,#8a6000,#fad643)">
+            <img src="IMG/IMG-20260311-WA0013.jpg" alt="">
+          </div>
+          <h4>Diogo Oliveira</h4>
+          <p class="team-role">Analista</p>
+          <div class="socials">
+            <a href="#" aria-label="LinkedIn">In</a>
+            <a href="#" aria-label="GitHub">gH</a>
+            <a href="#" aria-label="Twitter / X">✕</a>
+          </div>
+        </div>
+
+        <div class="team-card reveal d3">
+          <div class="avatar" style="background:linear-gradient(135deg,#1a00c0,#0066ff)">
+            <img src="IMG/IMG-20260311-WA0009.jpg" alt="">
+          </div>
+          <h4>Sarah Barella</h4>
+          <p class="team-role">Designer</p>
+          <div class="socials">
+            <a href="#" aria-label="LinkedIn">In</a>
+            <a href="#" aria-label="Github">gH</a>
+            <a href="#" aria-label="Twitter / X">✕</a>
+          </div>
+        </div>
+
+        <div class="team-card reveal d4">
+          <div class="avatar" style="background:linear-gradient(135deg,#18007a,#4d3aff)">
+            <img src="IMG/IMG-20260311-WA0015.jpg" alt="">
+          </div>
+          <h4>Igor Lima</h4>
+          <p class="team-role">Dev Full Stack</p>
+          <div class="socials">
+            <a href="#" aria-label="LinkedIn">In</a>
+            <a href="#" aria-label="GitHub">gH</a>
+            <a href="#" aria-label="Twitter / X">✕</a>
+          </div>
+        </div>
+
+        <div class="team-card reveal d5">
+          <div class="avatar" style="background:linear-gradient(135deg,#6b3800,#fad643)">
+            <img src="IMG/IMG-20260908-WA0001.jpg" alt="">
+          </div>
+          <h4>Gabriel Fiori</h4>
+          <p class="team-role">Dev Full Stack</p>
+          <div class="socials">
+            <a href="#" aria-label="LinkedIn">In</a>
+            <a href="#" aria-label="Instagram">gH</a>
+            <a href="#" aria-label="Twitter / X">✕</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Contato -->
+  <section id="contact" aria-label="Entre em contato">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="section-tag">Fale conosco</p>
+        <h2 class="section-title">Vamos Criar Algo Incrível</h2>
+        <p class="section-desc">Tem uma ideia ou quer saber mais sobre nossas soluções? Estamos prontos para conversar.
+        </p>
+      </div>
+
+      <div class="contact-wrap">
+        <div class="contact-info reveal-left">
+          <h3>Contate-nos</h3>
+          <p>Estamos sempre abertos para conversar sobre como a tecnologia pode transformar a educação e a inclusão na
+            sua escola ou instituição. Entre em contato e vamos explorar possibilidades juntos.</p>
+          <div class="cinfo-row">
+            <div class="cinfo-icon" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                class="bi bi-envelope-at-fill" viewBox="0 0 16 16">
+                <path
+                  d="M2 2A2 2 0 0 0 .05 3.555L8 8.414l7.95-4.859A2 2 0 0 0 14 2zm-2 9.8V4.698l5.803 3.546zm6.761-2.97-6.57 4.026A2 2 0 0 0 2 14h6.256A4.5 4.5 0 0 1 8 12.5a4.49 4.49 0 0 1 1.606-3.446l-.367-.225L8 9.586zM16 9.671V4.697l-5.803 3.546.338.208A4.5 4.5 0 0 1 12.5 8c1.414 0 2.675.652 3.5 1.671" />
+                <path
+                  d="M15.834 12.244c0 1.168-.577 2.025-1.587 2.025-.503 0-1.002-.228-1.12-.648h-.043c-.118.416-.543.643-1.015.643-.77 0-1.259-.542-1.259-1.434v-.529c0-.844.481-1.4 1.26-1.4.585 0 .87.333.953.63h.03v-.568h.905v2.19c0 .272.18.42.411.42.315 0 .639-.415.639-1.39v-.118c0-1.277-.95-2.326-2.484-2.326h-.04c-1.582 0-2.64 1.067-2.64 2.724v.157c0 1.867 1.237 2.654 2.57 2.654h.045c.507 0 .935-.07 1.18-.18v.731c-.219.1-.643.175-1.237.175h-.044C10.438 16 9 14.82 9 12.646v-.214C9 10.36 10.421 9 12.485 9h.035c2.12 0 3.314 1.43 3.314 3.034zm-4.04.21v.227c0 .586.227.8.581.8.31 0 .564-.17.564-.743v-.367c0-.516-.275-.708-.572-.708-.346 0-.573.245-.573.791" />
+              </svg>
+            </div><span>contato@astracompany.com.br</span>
+          </div>
+          <div class="cinfo-row">
+            <div class="cinfo-icon" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                class="bi bi-telephone-outbound-fill" viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                  d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877zM11 .5a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-1 0V1.707l-4.146 4.147a.5.5 0 0 1-.708-.708L14.293 1H11.5a.5.5 0 0 1-.5-.5" />
+              </svg>
+            </div><span>+55 (11) 9 9999-9999</span>
+          </div>
+          <div class="cinfo-row">
+            <div class="cinfo-icon" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+                <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10m0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6" />
+              </svg>
+            </div><span>São Paulo, SP — Brasil</span>
+          </div>
+          <div class="csocials" aria-label="Redes sociais da Astra Company">
+            <a href="#" aria-label="Instagram">ig</a>
+            <a href="#" aria-label="LinkedIn">in</a>
+            <a href="#" aria-label="GitHub">gh</a>
+            <a href="#" aria-label="Twitter / X">✕</a>
+            <a href="#" aria-label="YouTube">▶</a>
+          </div>
+        </div>
+
+        <div class="cform reveal-right">
+          <div class="form-row">
+            <div class="fgroup">
+              <label for="cf-name">Nome completo</label>
+              <input type="text" id="cf-name" placeholder="Seu nome..." autocomplete="name" />
+            </div>
+            <div class="fgroup">
+              <label for="cf-email">E-mail</label>
+              <input type="email" id="cf-email" placeholder="seu@email.com" autocomplete="email" />
+            </div>
+          </div>
+          <div class="fgroup">
+            <label for="cf-subject">Assunto</label>
+            <input type="text" id="cf-subject" placeholder="Como podemos ajudar?" />
+          </div>
+          <div class="fgroup">
+            <label for="cf-msg">Mensagem</label>
+            <textarea id="cf-msg" placeholder="Conte-nos sobre seu projeto, escola ou dúvida..."></textarea>
+          </div>
+          <button class="btn-send">✦ Enviar mensagem</button>
+          <div class="success-msg" id="successMsg" role="alert">
+            ✔ Mensagem enviada com sucesso! Entraremos em contato em breve.
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer  -->
+  <footer aria-label="Rodapé">
+    <div class="foot-logo">
+      <img src="IMG/logo-astra.png" alt="Astra Company" width="256" height="132" loading="lazy">
+    </div>
+    <p>© 2026 <span>Astra Company</span> · Todos os direitos reservados</p>
+    <p style="margin-top:.4rem"> Feito por alunos do 3° AMS - <span>Soluções que fazem você brilhar ✦</span>
+    </p>
+  </footer>
+
+  <!-- Bootstrap -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"></script>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
