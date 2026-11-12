@@ -857,14 +857,19 @@ ul {
     margin-bottom: 1.4rem;
 }
 
+/* Tags lado a lado; ao quebrar linha, cada uma cresce até preencher a largura (efeito "justificado") */
 .project-card__tags {
     display: flex;
     flex-wrap: wrap;
     gap: .55rem;
+    padding-left: 0; /* o Bootstrap põe 2rem de recuo em toda <ul> */
     margin-bottom: 2rem;
 }
 
 .project-card__tags li {
+    flex: 1 1 auto;
+    text-align: center;
+    white-space: nowrap;
     padding: .35rem .9rem;
     border-radius: var(--radius-sm);
     font-size: .85rem;
@@ -907,9 +912,17 @@ ul {
     }
 
     .project-card__chips,
-    .project-card__tags,
     .project-card__actions {
         justify-content: center;
+    }
+
+    .project-card__tags {
+        gap: .45rem;
+    }
+
+    .project-card__tags li {
+        padding: .35rem .6rem;
+        font-size: .78rem;
     }
 
     .project-card__actions .btn {
