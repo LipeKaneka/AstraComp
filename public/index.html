@@ -112,34 +112,51 @@
           experiência interativa, divertida e verdadeiramente inclusiva.</p>
       </div>
 
-      <div class="project-hero-card reveal">
-        <h3>Signa Ludus</h3>
-        <p>A plataforma Signa foi desenvolvida para apoiar professores no ensino inclusivo de LIBRAS, criando pontes
-          entre professores e crianças surdas e ouvintes através de gamificação inteligente, inteligência artificial e
-          atividades interativas que tornam o aprendizado mais fácil e memorável.</p>
-      </div>
+      <!--
+        Um <article class="project-card"> por projeto. Para adicionar outro, copie o card e troque
+        data-github-repo (dono/repositório): o botão de download busca sozinho a última release.
+      -->
+      <div class="projects-list">
+        <article class="project-card reveal" data-github-repo="LipeKaneka/signa-app">
+          <div class="project-card__icon" aria-hidden="true">🤟</div>
 
-      <div class="features-grid">
-        <div class="feature-card reveal d1">
-          <h4>Gamificação Total</h4>
-          <p>Sistema completo de missões e conquistas que mantém usuários engajados e motivados
-            durante toda a jornada de aprendizado em LIBRAS.</p>
-        </div>
-        <div class="feature-card reveal d2">
-          <h4>Desafios Interativos</h4>
-          <p>Desafios diários, semanais e temáticos que incentivam a prática constante de LIBRAS de forma lúdica,
-            progressiva e cada vez mais envolvente.</p>
-        </div>
-        <div class="feature-card reveal d1">
-          <h4>Agente Virtual Inteligente</h4>
-          <p>Assistente de IA que acompanha o desenvoltura do professor, oferecendo dicas personalizadas e adaptando o
-            conteúdo ao ritmo e estilo de ensino de cada um para auxiliar na aplicação de aulas mais eficazes.</p>
-        </div>
-        <div class="feature-card reveal d3">
-          <h4>Atividades em LIBRAS</h4>
-          <p>Biblioteca rica de atividades interativas com vídeos em LIBRAS, exercícios de reconhecimento e
-            práticas desenvolvidas com especialistas certificados.</p>
-        </div>
+          <div class="project-card__body">
+            <div class="project-card__chips">
+              <span class="chip chip--platform">Android</span>
+              <span class="chip" data-release-version>Última versão</span>
+            </div>
+
+            <h3 class="project-card__title">Signa Ludus</h3>
+            <p class="project-card__desc">A plataforma Signa foi desenvolvida para apoiar professores no ensino
+              inclusivo de LIBRAS, criando pontes entre professores e crianças surdas e ouvintes através de gamificação
+              inteligente, inteligência artificial e atividades interativas que tornam o aprendizado mais fácil e
+              memorável.</p>
+
+            <ul class="project-card__tags" aria-label="Destaques">
+              <li>Gamificação</li>
+              <li>Desafios interativos</li>
+              <li>Agente virtual com IA</li>
+              <li>Atividades em LIBRAS</li>
+            </ul>
+
+            <div class="project-card__actions">
+              <!-- Sem JavaScript (ou se a API do GitHub falhar), abre a página da última release -->
+              <a class="btn btn-primary" data-release-download
+                href="https://github.com/LipeKaneka/signa-app/releases/latest" target="_blank" rel="noopener">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"
+                  stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M12 3v12m0 0-5-5m5 5 5-5M4 21h16" />
+                </svg>
+                Baixar app
+              </a>
+              <a class="btn btn-outline" href="https://github.com/LipeKaneka/signa-app" target="_blank"
+                rel="noopener">Ver no GitHub</a>
+            </div>
+
+            <p class="project-card__release" data-release-info aria-live="polite">Buscando a versão mais
+              recente…</p>
+          </div>
+        </article>
       </div>
     </div>
   </section>

@@ -414,7 +414,7 @@
 (function () {
     if (!window.matchMedia('(hover: hover)').matches) return;
 
-    const CARD_SELECTOR = '.feature-card, .access-card, .team-card, .mvv-card';
+    const CARD_SELECTOR = '.project-card, .access-card, .team-card, .mvv-card';
 
     document.addEventListener('pointermove', event => {
         const card = event.target.closest(CARD_SELECTOR);
@@ -423,6 +423,55 @@
         card.style.setProperty('--mx', `${event.clientX - rect.left}px`);
         card.style.setProperty('--my', `${event.clientY - rect.top}px`);
     }, { passive: true });
+})();
+
+/* =====================================================
+   PROJETOS — download da última release do GitHub
+   Uso: <article data-github-repo="dono/repositorio"> com
+   [data-release-download], [data-release-version] e [data-release-info]
+===================================================== */
+(function () {
+    const INSTALLER_PATTERN = /\.(apk|exe|msi|dmg|AppImage|zip)$/i;
+
+    async function fetchLatestRelease(repo) {
+        const response = await fetch(`https://api.github.com/repos/${repo}/releases/latest`, {
+            headers: { Accept: 'application/vnd.github+json' },
+        });
+        if (!response.ok) throw new Error(`GitHub respondeu ${response.status}`);
+        return response.json();
+    }
+
+    const formatSize = bytes => `${(bytes / 1024 / 1024).toFixed(1).replace('.', ',')} MB`;
+    const formatDate = iso => new Date(iso).toLocaleDateString('pt-BR');
+
+    async function setupProjectCard(card) {
+        const button = card.querySelector('[data-release-download]');
+        const version = card.querySelector('[data-release-version]');
+        const info = card.querySelector('[data-release-info]');
+
+        try {
+            const release = await fetchLatestRelease(card.dataset.githubRepo);
+            const installer = release.assets.find(asset => INSTALLER_PATTERN.test(asset.name));
+            if (version) version.textContent = release.tag_name;
+
+            if (!installer) {
+                info.textContent = `Versão ${release.tag_name} — escolha o arquivo na página da release.`;
+                return;
+            }
+
+            // Link direto para o arquivo: o download começa sem sair do site.
+            button.href = installer.browser_download_url;
+            button.removeAttribute('target');
+            info.textContent = `${installer.name} · ${formatSize(installer.size)} · publicado em ${formatDate(release.published_at)}`;
+        } catch {
+            // O botão continua apontando para a página de releases (definida no HTML).
+            if (version) version.hidden = true;
+            info.textContent = 'Não foi possível consultar a versão agora; o botão abre a página de downloads.';
+            info.classList.add('is-error');
+        }
+    }
+
+    document.querySelectorAll('[data-github-repo]').forEach(setupProjectCard);
 })();
 
 /* =====================================================
