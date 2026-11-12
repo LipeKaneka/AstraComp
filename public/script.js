@@ -414,7 +414,7 @@
 (function () {
     if (!window.matchMedia('(hover: hover)').matches) return;
 
-    const CARD_SELECTOR = '.project-card, .access-card, .team-card, .mvv-card';
+    const CARD_SELECTOR = '.access-card, .team-card, .mvv-card';
 
     document.addEventListener('pointermove', event => {
         const card = event.target.closest(CARD_SELECTOR);
