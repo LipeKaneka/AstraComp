@@ -510,7 +510,7 @@
     }
 
     async function postContact(payload) {
-        const response = await fetch('/contato', {
+        const response = await fetch('/api/contato', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify(payload),

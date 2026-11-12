@@ -1,8 +1,8 @@
 {
   "name": "astra-company",
   "version": "1.0.0",
-  "description": "Astra Company — site institucional com servidor de contato",
-  "main": "server.js",
+  "description": "Astra Company — site institucional com formulário de contato",
+  "private": true,
   "scripts": {
     "start": "node server.js",
     "dev": "node server.js"
